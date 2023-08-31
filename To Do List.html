@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+  </head>
+  <body>
+<section class="to-doList">
+  <h1 class="list-heading">TODO-LIST</h1>
+      <div class="list-input">
+            <input type="text" placeholder="Enter Your list here" class="inputer"id="inputer">
+            <span class="button-add"id="button-add"><i class="fas fa-plus"></i></span>
+      </div>
+      <div class="content" id="content">
+          <div class="no-tasks-message"id="no-tasks-message">
+            <div class="checked">
+              <input type="checkbox" >
+              <p class="message" id="message">No Tasks To Show</p>
+            </div>
+            <div class="icons">
+              <span> <i class="far fa-edit"></i> </span>
+              <span> <i class="fas fa-times"></i> </span>
+            </div>
+          </div>
+          <div class="All-span" id="All-span">
+
+          </div>
+      </div>
+      <div class="task-stats">
+        <div class="tasks-count"id="tasks-count tasks-completed">
+          <span id="counter">0</span> of  <span id="completed">0</span> tasks done
+        </div>
+        <button class="delete-all"id="delete-all">
+          Removed Checked <span>( <i class="fas fa-times"></i> )</span>
+        </button>
+      </div>
+</section>
+  
+    <script src="all.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
